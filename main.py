@@ -8,4 +8,13 @@ first_name = input("Enter your first name:")
 last_name = input("Enter your last name:")
 gpa = float(input("Enter your grade point average:"))
 
+def processing(first_name, last_name, gpa):
+
+    if first_name or last_name == "zzz" or "ZZZ":
+        exit
+    elif gpa >= 3.5:
+        print("You qualify for the Dean's List!")
+    elif gpa >= 3.25:
+        print("You qualify for the Honor Roll!")
+    exit
 
